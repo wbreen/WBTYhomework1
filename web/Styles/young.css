@@ -4,47 +4,103 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Oct 3, 2016, 8:27:06 PM
-    Author     : tyoung12
+Copyright 2016 Tyler Young
 */
 @media only screen and (min-width: 501px) {
 html {
     font-family: sans-serif;
+    height: 100%;  
     width: 100%;
-    height: 100%;
-    
 }
 
 header {
     text-align: center;
 }
 
-
-body {
-    
-}
-
 #body {
-    width: 90%;
     height: 100%;
     margin-left: 5%;
-    margin-right: 20%;
-    
-    
+    margin-right: 20%;   
+    width: 90%;
 }
 
 .headername {
+    margin-top: 3em;
     text-align: center;
 }
+
 .date {
     float: right;
 }
 
 #infoheaderlist ul {
     margin:0;
+    margin-top: -1.25em;
     padding:0;
     text-align: center;
-    margin-top: -20px;
+}
+
+#infoheaderlist ul li {
+    display: inline;
+    padding: .01em 0.001em;
+}
+
+#infoheaderlist ul li:before {
+    content:"•" 
+}
+
+.technicallist,
+.internshiplist, 
+.internshiplist2, 
+.workexperiencelist, 
+.leadershiplist, 
+.leadershiplist2 {
+    margin-top: -0.03125em;
+}
+
+.educationsection,
+.technicalsection,
+.internshipsection,
+.workexperiencesection,
+.leadershipsection {
+    margin-top:-1.125em;
+}
+
+.softwareapplications,
+.operatingsystems {
+    margin-top: -0.9375em;
+}
+
+ul {
+    padding-left: 3em;
+}
+
+li {
+    padding-left: 0.5em;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+html {
+    font-family: sans-serif; 
+}
+   
+#body {
+    margin-left: 5%; 
+    width: 26.5625em;   
+}
+   
+.headername {
+    margin-top: 3em;
+    text-align: center;
+}
+
+#infoheaderlist ul {
+    margin-top: -1.25em;
+    padding-right: 3.125em;
+    text-align: center;
+    max-width: 275px;
 }
 
 #infoheaderlist ul li {
@@ -58,7 +114,7 @@ body {
 .workexperiencelist, 
 .leadershiplist, 
 .leadershiplist2 {
-    margin-top: -0.5px;
+    margin-top: -0.03125em;
 }
 
 .educationsection,
@@ -66,49 +122,30 @@ body {
 .internshipsection,
 .workexperiencesection,
 .leadershipsection {
-    margin-top:-18px;
+    margin-top:-1.125em;
 }
 
 .softwareapplications,
 .operatingsystems {
-    margin-top: -15px;
+    margin-top: -0.9375em;
 }
 
 .technicallist li span {
-    position:relative;
-    left: -50px;
+    left: -3.125em;
+    position: relative;
 }
 
+ul {
+    padding-left: 3em;
 }
 
-@media only screen and (max-width: 500px){
-    html {
-        font-family: none;
-      
-    }
-    
-    #body {
-        width:490px;
-    }
-    
-    body {
-        margin-left: 5%;
-    }
-    
-    #infoheaderlist ul {
-   
-    text-align: center;
+li {
+    padding-left: 0.5em;
 }
 
-    #infoheaderlist ul li {
-    display: inline;
-    padding: .2em 1em;
-    
+.bulletone:before, .bullettwo:before {
+     content:"•" 
 }
 
-    .headername {
-    text-align: center;
-}
-    
 }
 
